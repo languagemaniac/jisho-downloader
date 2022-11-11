@@ -53,9 +53,8 @@ if __name__ == '__main__':
                 print("Error con " + str(kanji))
                 e_file.write(str(kanji))
             count += 1
-            #print("Realizado el %.1f" % ((count/total)*100) + "%. Se han procesado " + str(count) + "/" + str(total) + " palabras.")
 
-    print("KANJIS: PROCESO COMPLETADO")
+    print("Process completed")
     m_file.close()
     e_file.close()
     f.close()
