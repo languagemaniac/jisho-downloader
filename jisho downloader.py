@@ -48,7 +48,7 @@ if __name__ == '__main__':
                 if response.status_code == 200:
                     print(len(json['data']))
                     if len(json['data']) > 0:
-                        m_file.write(kanji:data(json['data'][0], kanji))
+                        m_file.write(kanji_data(json['data'][0], kanji))
             except:
                 print("Error with " + str(kanji))
                 e_file.write(str(kanji))
