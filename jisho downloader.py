@@ -42,7 +42,7 @@ if __name__ == '__main__':
     with open(words_file, "r", encoding='utf-8') as f:
         count = 0
         for kanji in f:
-            requests.get(f'https://jisho.org/api/v1/search/words?keyword="{kanji}"')
+            response = requests.get(f'https://jisho.org/api/v1/search/words?keyword="{kanji}"')
             try:
                 json = response.json()
                 if response.status_code == 200:
